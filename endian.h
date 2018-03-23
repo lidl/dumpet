@@ -19,7 +19,11 @@
 #ifndef ENDIAN_H
 #define ENDIAN_H
 
+#ifdef __FreeBSD__
+#include <sys/endian.h>
+#else
 #include <endian.h>
+#endif
 
 #if __BYTE_ORDER == __LITTLE_ENDIAN
 #define cpu_to_le16(x) (x)
