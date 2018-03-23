@@ -1,3 +1,7 @@
 dumpet
+dumpet.1.gz
+dumpet.debug
+dumpet.full
 *.o
 *.iso
+.depend
